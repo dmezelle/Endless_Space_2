@@ -1,0 +1,3637 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><script>
+    window.addEventListener('load', initialize, false)
+
+    function initialize() {
+        // Display all log types.
+        document.getElementsByTagName('body')[0].className = 'Log Warning Error Exception Assert';
+    }
+
+    function toggle_stack(id) 
+    {
+        var element = document.getElementById(id);
+        if (element.style.display != 'block') {
+            element.style.display = 'block';
+        }
+        else {
+            element.style.display = 'none';
+        }
+    }
+
+    function toggle_logs_by_class(className)
+    {
+        document.querySelector("input." + className).classList.toggle('hidden'); // button
+        document.getElementsByTagName('body')[0].classList.toggle(className); // logs
+    }
+</script>
+<style>
+    pre {
+    display:none;
+    }
+
+    a {
+    background-color:#ffffff;
+    border-radius:4px;
+    color:#cccccc;
+    cursor: hand;
+    font-size:small;
+    font-weight:normal;
+    margin-right: 16px;
+    padding:3px;
+    text-decoration: none;
+    width:10em;
+    }
+
+    h1 {
+    padding-top: 2em;
+    }
+
+    body {
+    font-family:"calibri";
+    margin-top: 0;
+    padding-top: 0;
+    }
+
+    body.log div.log, 
+    body.warning div.warning, 
+    body.error div.error, 
+    body.exception div.exception, 
+    body.assert div.assert {
+    display: block;
+    }
+
+    div {
+    display:none; 
+    font-family:"calibri";
+    margin:2px;
+    padding:4px;
+    }
+
+    div.log, input.log {
+    background-color:#eeeeee;
+    }
+
+    div.warning, input.warning {
+    background-color:#FF8F00;
+    color:#FFF8E1;
+    font-weight:bold;
+    }
+
+    div.error, input.error {
+    background-color:#ff2a2a;
+    color:#FFEBEE;
+    font-weight:bold;
+    }
+
+    div.exception, input.exception {
+    background-color:#C2185B;
+    color:#FCE4EC;
+    font-weight:bold;
+    }
+
+    div.assert, input.assert {
+    background-color:#4527A0;
+    color:#EDE7F6;
+    font-weight:bold;
+    }
+
+    input.hidden {
+    background-color:#FAFAFA;
+    color:#E0E0E0;
+    }
+
+    .button {
+    border:none;
+    border-radius: 5px;
+    cursor: hand;
+    display:inline;
+    margin:2px;
+    padding:4px;
+    width:10em;
+    }
+
+    .header {
+    display:block; 
+    background:#ffffff;
+    position:fixed;
+    width:100%;
+    height:30px;
+    }
+
+    .padding {
+    height:20em;
+    }
+
+    .time {
+    background-color:transparent;
+    color:#757575;
+    float: left;
+    width:8em;
+    }
+
+    .flags {
+    background-color:transparent;
+    float: left;
+    width:6em;
+    }
+</style>
+</head><body class="Log Warning Error Exception Assert"><div class="Header">
+    <input type="button" value="Message" class="Log Button" onclick="toggle_logs_by_class('Log')">
+    <input type="button" value="Warning" class="Warning Button" onclick="toggle_logs_by_class('Warning')">
+    <input type="button" value="Error" class="Error Button" onclick="toggle_logs_by_class('Error')">
+    <input type="button" value="Exception" class="Exception Button" onclick="toggle_logs_by_class('Exception')">
+    <input type="button" value="Assert" class="Assert Button" onclick="toggle_logs_by_class('Assert')">
+</div>
+<h1>Monday, 10 December 2018 19:24<br>ENDLESS SPACE 2 V1.3.27.42400 S5 GOLD-Public (64-bit)</h1>
+Click on buttons to toggle visibility. Click on STACK buttons to toggle visibility of stack traces.
+
+<div class="Log Default"><span class="time">19:24:34:689</span><span class="flags">Default</span><a onclick="toggle_stack('trace0')">STACK</a>Starting the application, version is V1.3.27.42400 S5 GOLD-Public (64-bit)...
+<pre id="trace0"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:34:690</span><span class="flags">Default</span><a onclick="toggle_stack('trace1')">STACK</a>Running 64-bit mode...
+<pre id="trace1"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:34:690</span><span class="flags">Default</span><a onclick="toggle_stack('trace2')">STACK</a>Game directory is "C:\Users\David\Documents\Endless Space 2".
+<pre id="trace2"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:34:690</span><span class="flags">Default</span><a onclick="toggle_stack('trace3')">STACK</a>[Steam]
+ Available game languages are 
+'english,german,french,koreana,spanish,schinese,tchinese,russian,polish,brazilian',
+ current game language is 'english'.
+<pre id="trace3"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:34:690</span><span class="flags">Default</span><a onclick="toggle_stack('trace4')">STACK</a>[Steam] Steam user id is '0x0110000104f5a9cb'.
+<pre id="trace4"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:34:690</span><span class="flags">Default</span><a onclick="toggle_stack('trace5')">STACK</a>[Steam] Steam user name is 'barbarossa41'.
+<pre id="trace5"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:34:690</span><span class="flags">Default</span><a onclick="toggle_stack('trace6')">STACK</a>Loading registry file 'F:/Steam/steamapps/common/Endless Space 2\Registry.xml'...
+<pre id="trace6"> at LoadRegistryFile in :line 0
+ at LoadRegistryFiles in :line 0
+ at LoadRegistry in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:34:690</span><span class="flags">Default</span><a onclick="toggle_stack('trace7')">STACK</a>Registry file 'C:\Users\David\Documents\Endless Space 2\Registry.xml' does not exist.
+<pre id="trace7"> at LoadRegistryFile in :line 0
+ at LoadRegistryFiles in :line 0
+ at LoadRegistry in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:34:690</span><span class="flags">Default</span><a onclick="toggle_stack('trace8')">STACK</a>Loading registry file 'C:\Users\David\Documents\Endless Space 2\Users\83208651\Registry.xml'...
+<pre id="trace8"> at LoadRegistryFile in :line 0
+ at LoadRegistryFiles in :line 0
+ at LoadRegistry in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Audio"><span class="time">19:24:34:811</span><span class="flags">Audio</span><a onclick="toggle_stack('trace9')">STACK</a>Initializing the Wwise sound engine...
+<pre id="trace9"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Audio"><span class="time">19:24:34:811</span><span class="flags">Audio</span><a onclick="toggle_stack('trace10')">STACK</a>Sound engine initialized.
+<pre id="trace10"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Audio"><span class="time">19:24:34:811</span><span class="flags">Audio</span><a onclick="toggle_stack('trace11')">STACK</a>4 audio modules have been loaded.
+<pre id="trace11"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Audio Data"><span class="time">19:24:34:811</span><span class="flags">Audio, Data</span><a onclick="toggle_stack('trace12')">STACK</a>782 LipSync Data successfully loaded
+<pre id="trace12"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:34:811</span><span class="flags">Default</span><a onclick="toggle_stack('trace13')">STACK</a>Playing
+ with 12 downloadable content(s): The Pathfinders, The Cravers Prime, 
+Stellar Prisoner, Target Locked, Halloween Update, DLC Vaulters Free 
+Content, DLC Vaulters, Endless Day Update, Make War Not Love, Minor DLC 
+Quests, Minor DLC Music, Community Challenge 2.
+<pre id="trace13"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:34:811</span><span class="flags">Default</span><a onclick="toggle_stack('trace14')">STACK</a>Playing
+ with 6 activated downloadable content(s): The Pathfinders, The Cravers 
+Prime, DLC Vaulters, Minor DLC Quests, Minor DLC Music, Community 
+Challenge 2.
+<pre id="trace14"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:34:811</span><span class="flags">Default</span><a onclick="toggle_stack('trace15')">STACK</a>Hello 'barbarossa41'!
+<pre id="trace15"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:34:811</span><span class="flags">Default</span><a onclick="toggle_stack('trace16')">STACK</a>Changing display settings to 1920x1200, 0Hz...
+<pre id="trace16"> at ChangeDisplaySettings in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:34:811</span><span class="flags">Default</span><a onclick="toggle_stack('trace17')">STACK</a>... switching to 1920x1200 (0) Window...
+<pre id="trace17"> at ChangeDisplaySettings in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:34:811</span><span class="flags">Default</span><a onclick="toggle_stack('trace18')">STACK</a>Setting the general quality level to '5'.
+<pre id="trace18"> at set_QualityLevel in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:36:179</span><span class="flags">Default</span><a onclick="toggle_stack('trace19')">STACK</a>Current game language is 'english'.
+<pre id="trace19"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:36:179</span><span class="flags">Default</span><a onclick="toggle_stack('trace20')">STACK</a>Resolution has been changed.
+<pre id="trace20"> at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:36:179</span><span class="flags">Default</span><a onclick="toggle_stack('trace21')">STACK</a>CameraManager.VideoSettingsService_ResolutionChange.
+<pre id="trace21"> at VideoSettingsService_ResolutionChange in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:36:179</span><span class="flags">Default</span><a onclick="toggle_stack('trace22')">STACK</a>Resetting Camera Aspect has been changed 1.6 -&gt; 1.6.
+<pre id="trace22"> at VideoSettingsService_ResolutionChange in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:36:179</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace23')">STACK</a>Binding
+ service [IGPUColorEvolutionService] with context 
+[AllwaysActivatedCamera] with an instance of type 
+[GPUColorEvolutionManager]
+<pre id="trace23"> at AddService in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:36:179</span><span class="flags">Default</span><a onclick="toggle_stack('trace24')">STACK</a>VideoStateManager : Device lost
+<pre id="trace24"> at LateUpdate in :line 0
+</pre>
+</div>
+
+<div class="Log Prism"><span class="time">19:24:36:377</span><span class="flags">Prism</span><a onclick="toggle_stack('trace25')">STACK</a>Game
+ Session-Open: {"crc":"AC7AFE5AD1E400E03365F13007C51D49,V1.3.27.42400 S5
+ GOLD-Public 
+(64-bit),206760","hwid":"699c9db10ce758ebe03fd47caf1361a21a6a6fb0","system_os":"Windows
+ 10  (10.0.0) 64bit","system_processor":"Intel(R) Core(TM) i7-3770 CPU @
+ 3.40GHz","system_memory":"17133731840","system_display":"NVIDIA GeForce
+ GTX 560 
+Ti","system_display_memory":"1016070144","eventID":"1.21.01","eventName":"Game
+ 
+Session-Open","steamID":"76561198043474379","gamecode":"392110","sessionID":"ea788feed96d42f594bf5d825fe2a32a","eventTimestampClient":"2018-12-10T19:24:34.945"}
+<pre id="trace25"> at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:36:378</span><span class="flags">Default</span><a onclick="toggle_stack('trace26')">STACK</a>VideoStateManager : Device is no longer lost
+<pre id="trace26"> at LateUpdate in :line 0
+</pre>
+</div>
+
+<div class="Log AI"><span class="time">19:24:36:737</span><span class="flags">AI</span><a onclick="toggle_stack('trace27')">STACK</a>AI assembly Amplitude.AI.Loader v1.0.3.0 loaded
+<pre id="trace27"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AI"><span class="time">19:24:36:737</span><span class="flags">AI</span><a onclick="toggle_stack('trace28')">STACK</a>AI assembly Amplitude.AI.Common v1.0.0.0 loaded
+<pre id="trace28"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Audio"><span class="time">19:24:36:737</span><span class="flags">Audio</span><a onclick="toggle_stack('trace29')">STACK</a>Mute rear channels (since we are in mono or stereo speaker configuration)
+<pre id="trace29"> at OnSpeakerConfigurationChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Audio"><span class="time">19:24:36:737</span><span class="flags">Audio</span><a onclick="toggle_stack('trace30')">STACK</a>The audio manager is ready.
+<pre id="trace30"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:36:737</span><span class="flags">Default</span><a onclick="toggle_stack('trace31')">STACK</a>Error message modal is disabled.
+<pre id="trace31"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Warning Data"><span class="time">19:24:36:755</span><span class="flags">Data</span><a onclick="toggle_stack('trace32')">STACK</a>The
+ database of type 
+'Amplitude.Unity.Localization.LocalizationDatatableElement' has 
+overriden an element because its key name 
+'%FailureOnlyScientistsDescription' was already registered for the same 
+revision number #1.
+<pre id="trace32"> at AddElement in :line 0
+ at LoadFromFile in :line 0
+ at LoadFile in :line 0
+ at LoadDatabase in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:271</span><span class="flags">Default</span><a onclick="toggle_stack('trace33')">STACK</a>Runtime configuration is null or empty; using the default module 'Endless Space 2' as new configuration.
+<pre id="trace33"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at LoadRuntime in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:271</span><span class="flags">Default</span><a onclick="toggle_stack('trace34')">STACK</a>Loading runtime module 'Endless Space 2'...
+<pre id="trace34"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at LoadRuntime in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:271</span><span class="flags">Default</span><a onclick="toggle_stack('trace35')">STACK</a>Loading plugin files for AI ...
+<pre id="trace35"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at LoadRuntime in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AI"><span class="time">19:24:37:271</span><span class="flags">AI</span><a onclick="toggle_stack('trace36')">STACK</a>Register
+ AI plugin Amplitude.AI.Core v1.0.161.33 in Release configuration from 
+file F:/Steam/steamapps/common/Endless Space 
+2/Public/AI/Release/Amplitude.AI.Core.dll
+<pre id="trace36"> at RegisterAIAssemblyPath in :line 0
+ at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at LoadRuntime in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:313</span><span class="flags">Default</span><a onclick="toggle_stack('trace37')">STACK</a>Loading plugin files for AI ...
+<pre id="trace37"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AI"><span class="time">19:24:37:313</span><span class="flags">AI</span><a onclick="toggle_stack('trace38')">STACK</a>Register
+ AI plugin Amplitude.AI.Core (debug) v1.0.161.18746 in Debug 
+configuration from file F:/Steam/steamapps/common/Endless Space 
+2/Public/AI/Debug/Amplitude.AI.Core.dll
+<pre id="trace38"> at RegisterAIAssemblyPath in :line 0
+ at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:353</span><span class="flags">Default</span><a onclick="toggle_stack('trace39')">STACK</a>Loading runtime registry files...
+<pre id="trace39"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:445</span><span class="flags">Default</span><a onclick="toggle_stack('trace40')">STACK</a>Loading plugin files for database of type 'GalaxyGeneratorWeightTableDefinition'...
+<pre id="trace40"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:492</span><span class="flags">Default</span><a onclick="toggle_stack('trace41')">STACK</a>Loading plugin files for database of type 'Generator.Definitions.PlanetaryResourceDefinition'...
+<pre id="trace41"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:536</span><span class="flags">Default</span><a onclick="toggle_stack('trace42')">STACK</a>Loading plugin files for database of type 'Generator.Definitions.PlanetGameplayTypeDefinition'...
+<pre id="trace42"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:580</span><span class="flags">Default</span><a onclick="toggle_stack('trace43')">STACK</a>Loading plugin files for database of type 'Generator.Definitions.PlanetTemperatureDefinition'...
+<pre id="trace43"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:632</span><span class="flags">Default</span><a onclick="toggle_stack('trace44')">STACK</a>Loading plugin files for database of type 'Generator.Definitions.GalaxyShapeMergePlans'...
+<pre id="trace44"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:634</span><span class="flags">Default</span><a onclick="toggle_stack('trace45')">STACK</a>Loading plugin files for database of type 'Generator.Definitions.PlanetTierDefinition'...
+<pre id="trace45"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:638</span><span class="flags">Default</span><a onclick="toggle_stack('trace46')">STACK</a>Loading plugin files for database of type 'Generator.Definitions.PlanetPopulationCapacityGroupDefinition'...
+<pre id="trace46"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:650</span><span class="flags">Default</span><a onclick="toggle_stack('trace47')">STACK</a>Loading plugin files for database of type 'Generator.Definitions.PlanetaryAnomalyDefinition'...
+<pre id="trace47"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:657</span><span class="flags">Default</span><a onclick="toggle_stack('trace48')">STACK</a>Loading plugin files for database of type 'StarSystemNodeDefinition'...
+<pre id="trace48"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Warning Data"><span class="time">19:24:37:657</span><span class="flags">Data</span><a onclick="toggle_stack('trace49')">STACK</a>The
+ database of type 'StarSystemNodeDefinition' has overriden an element 
+because its key name 'QuestNodeArchivist' was already registered for the
+ same revision number #3.
+<pre id="trace49"> at AddElement in :line 0
+ at LoadFromFile in :line 0
+ at LoadFile in :line 0
+ at Amplitude.Unity.Framework.IDatabaseControl.LoadFile in :line 0
+ at LoadDatabase in :line 0
+ at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:666</span><span class="flags">Default</span><a onclick="toggle_stack('trace50')">STACK</a>Loading plugin files for database of type 'SpecialNodeDefinition'...
+<pre id="trace50"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:37:677</span><span class="flags">Default</span><a onclick="toggle_stack('trace51')">STACK</a>Loading plugin files for database of type 'NodeVisibilityConditionsDefinition'...
+<pre id="trace51"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:093</span><span class="flags">Default</span><a onclick="toggle_stack('trace52')">STACK</a>Loading plugin files for database of type 'EntityActionDefinition'...
+<pre id="trace52"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:108</span><span class="flags">Default</span><a onclick="toggle_stack('trace53')">STACK</a>Loading plugin files for database of type 'DiplomaticRelationState'...
+<pre id="trace53"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:111</span><span class="flags">Default</span><a onclick="toggle_stack('trace54')">STACK</a>Loading plugin files for database of type 'DiplomaticAbilityDefinition'...
+<pre id="trace54"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:294</span><span class="flags">Default</span><a onclick="toggle_stack('trace55')">STACK</a>Loading plugin files for database of type 'ForeignAffairsConstructibleElement'...
+<pre id="trace55"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:300</span><span class="flags">Default</span><a onclick="toggle_stack('trace56')">STACK</a>Loading plugin files for database of type 'DiplomaticPressureEffectDefinition'...
+<pre id="trace56"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:304</span><span class="flags">Default</span><a onclick="toggle_stack('trace57')">STACK</a>Loading plugin files for database of type 'DiplomaticFactionPactEffectDefinition'...
+<pre id="trace57"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:307</span><span class="flags">Default</span><a onclick="toggle_stack('trace58')">STACK</a>Loading plugin files for database of type 'WarPointsRewardDefinition'...
+<pre id="trace58"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:311</span><span class="flags">Default</span><a onclick="toggle_stack('trace59')">STACK</a>Loading plugin files for database of type 'ContractStubDefinition'...
+<pre id="trace59"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:777</span><span class="flags">Default</span><a onclick="toggle_stack('trace60')">STACK</a>Loading plugin files for database of type 'Amplitude.Unity.Simulation.SimulationDescriptor'...
+<pre id="trace60"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:791</span><span class="flags">Default</span><a onclick="toggle_stack('trace61')">STACK</a>Loading plugin files for database of type 'ResourceDefinition'...
+<pre id="trace61"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Prism"><span class="time">19:24:38:809</span><span class="flags">Prism</span><a onclick="toggle_stack('trace62')">STACK</a>Application
+ Start: 
+{"graphicsDeviceId":4608,"graphicsDeviceVendorId":4318,"graphicsDeviceVersionId":"Direct3D
+ 11.0 [level 
+11.0]","defaultSupportHxFxPlugin":"False","gameVersion":"V1.3.27.42400 
+S5 GOLD-Public (64-bit)","eventID":"5.01.03","eventName":"Application 
+Start","steamID":"76561198043474379","gamecode":"392110","sessionID":"ea788feed96d42f594bf5d825fe2a32a","eventTimestampClient":"2018-12-10T19:24:38.777"}
+<pre id="trace62"> at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:809</span><span class="flags">Default</span><a onclick="toggle_stack('trace63')">STACK</a>Loading plugin files for database of type 'PlanetReserveDefinition'...
+<pre id="trace63"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:825</span><span class="flags">Default</span><a onclick="toggle_stack('trace64')">STACK</a>Loading plugin files for database of type 'PropagatedPlanetDescriptorDefinition'...
+<pre id="trace64"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:840</span><span class="flags">Default</span><a onclick="toggle_stack('trace65')">STACK</a>Loading plugin files for database of type 'PropagatedPlanetPropertyDefinition'...
+<pre id="trace65"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:855</span><span class="flags">Default</span><a onclick="toggle_stack('trace66')">STACK</a>Loading plugin files for database of type 'SystemDefenseThresholdDefinition'...
+<pre id="trace66"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:871</span><span class="flags">Default</span><a onclick="toggle_stack('trace67')">STACK</a>Loading plugin files for database of type 'PopulationDefinition'...
+<pre id="trace67"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:894</span><span class="flags">Default</span><a onclick="toggle_stack('trace68')">STACK</a>Loading plugin files for database of type 'PopulationAspirationDefinition'...
+<pre id="trace68"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:908</span><span class="flags">Default</span><a onclick="toggle_stack('trace69')">STACK</a>Loading plugin files for database of type 'HappinessStatusSetDefinition'...
+<pre id="trace69"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:923</span><span class="flags">Default</span><a onclick="toggle_stack('trace70')">STACK</a>Loading plugin files for database of type 'HonorThresholdSetDefinition'...
+<pre id="trace70"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:951</span><span class="flags">Default</span><a onclick="toggle_stack('trace71')">STACK</a>Loading plugin files for database of type 'PopulationEventDefinition'...
+<pre id="trace71"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:38:967</span><span class="flags">Default</span><a onclick="toggle_stack('trace72')">STACK</a>Loading plugin files for database of type 'PopulationStateDefinition'...
+<pre id="trace72"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:000</span><span class="flags">Default</span><a onclick="toggle_stack('trace73')">STACK</a>Loading plugin files for database of type 'PopulationTrait'...
+<pre id="trace73"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:004</span><span class="flags">Default</span><a onclick="toggle_stack('trace74')">STACK</a>Loading plugin files for database of type 'PopulationPoliticalTraitDefinition'...
+<pre id="trace74"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:023</span><span class="flags">Default</span><a onclick="toggle_stack('trace75')">STACK</a>Loading plugin files for database of type 'PopulationModifiersTrait'...
+<pre id="trace75"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:033</span><span class="flags">Default</span><a onclick="toggle_stack('trace76')">STACK</a>Loading plugin files for database of type 'PopulationCollectionBonusTrait'...
+<pre id="trace76"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:038</span><span class="flags">Default</span><a onclick="toggle_stack('trace77')">STACK</a>Loading plugin files for database of type 'ResourceDepositDefinition'...
+<pre id="trace77"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:050</span><span class="flags">Default</span><a onclick="toggle_stack('trace78')">STACK</a>Loading plugin files for database of type 'AnomalyDefinition'...
+<pre id="trace78"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:102</span><span class="flags">Default</span><a onclick="toggle_stack('trace79')">STACK</a>Loading plugin files for database of type 'ShipDesignDefinition'...
+<pre id="trace79"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:112</span><span class="flags">Default</span><a onclick="toggle_stack('trace80')">STACK</a>Loading plugin files for database of type 'ShipRoleDefinition'...
+<pre id="trace80"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:359</span><span class="flags">Default</span><a onclick="toggle_stack('trace81')">STACK</a>Loading plugin files for database of type 'HullDefinition'...
+<pre id="trace81"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:471</span><span class="flags">Default</span><a onclick="toggle_stack('trace82')">STACK</a>Loading plugin files for database of type 'ModuleDefinition'...
+<pre id="trace82"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:474</span><span class="flags">Default</span><a onclick="toggle_stack('trace83')">STACK</a>Loading plugin files for database of type 'MedalDefinition'...
+<pre id="trace83"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:478</span><span class="flags">Default</span><a onclick="toggle_stack('trace84')">STACK</a>Loading plugin files for database of type 'RankDefinition'...
+<pre id="trace84"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:481</span><span class="flags">Default</span><a onclick="toggle_stack('trace85')">STACK</a>Loading plugin files for database of type 'RankPatternDefinition'...
+<pre id="trace85"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:484</span><span class="flags">Default</span><a onclick="toggle_stack('trace86')">STACK</a>Loading plugin files for database of type 'LevelUpRuleDefinition'...
+<pre id="trace86"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:495</span><span class="flags">Default</span><a onclick="toggle_stack('trace87')">STACK</a>Loading plugin files for database of type 'ShipConditionalConstructionEffectDefinition'...
+<pre id="trace87"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:523</span><span class="flags">Default</span><a onclick="toggle_stack('trace88')">STACK</a>Loading plugin files for database of type 'ShipDesignTemplateDefinition'...
+<pre id="trace88"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:735</span><span class="flags">Default</span><a onclick="toggle_stack('trace89')">STACK</a>Loading plugin files for database of type 'IndustryConstructibleElement'...
+<pre id="trace89"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:748</span><span class="flags">Default</span><a onclick="toggle_stack('trace90')">STACK</a>Loading plugin files for database of type 'AnomalyReductionDefinition'...
+<pre id="trace90"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:763</span><span class="flags">Default</span><a onclick="toggle_stack('trace91')">STACK</a>Loading plugin files for database of type 'PlanetCuriosityExpeditionDefinition'...
+<pre id="trace91"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:777</span><span class="flags">Default</span><a onclick="toggle_stack('trace92')">STACK</a>Loading plugin files for database of type 'RecipeIngredientDefinition'...
+<pre id="trace92"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:782</span><span class="flags">Default</span><a onclick="toggle_stack('trace93')">STACK</a>Loading plugin files for database of type 'RecipeSlotDefinition'...
+<pre id="trace93"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:785</span><span class="flags">Default</span><a onclick="toggle_stack('trace94')">STACK</a>Loading plugin files for database of type 'RecipeSpecialEffectDefinition'...
+<pre id="trace94"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:39:813</span><span class="flags">Default</span><a onclick="toggle_stack('trace95')">STACK</a>Loading plugin files for database of type 'PlanetColonizationConstructibleElement'...
+<pre id="trace95"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:208</span><span class="flags">Default</span><a onclick="toggle_stack('trace96')">STACK</a>Loading plugin files for database of type 'ScienceConstructibleElement'...
+<pre id="trace96"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:217</span><span class="flags">Default</span><a onclick="toggle_stack('trace97')">STACK</a>Loading plugin files for database of type 'TechnologyQuadrantDefinition'...
+<pre id="trace97"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:261</span><span class="flags">Default</span><a onclick="toggle_stack('trace98')">STACK</a>Loading plugin files for database of type 'TechnologyStageDefinition'...
+<pre id="trace98"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:279</span><span class="flags">Default</span><a onclick="toggle_stack('trace99')">STACK</a>Loading plugin files for database of type 'TechnologyLinkDefinition'...
+<pre id="trace99"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:290</span><span class="flags">Default</span><a onclick="toggle_stack('trace100')">STACK</a>Loading plugin files for database of type 'TechnologyHelperVariableDefinition'...
+<pre id="trace100"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:301</span><span class="flags">Default</span><a onclick="toggle_stack('trace101')">STACK</a>Loading plugin files for database of type 'UnlockDatatableElement'...
+<pre id="trace101"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:322</span><span class="flags">Default</span><a onclick="toggle_stack('trace102')">STACK</a>Loading plugin files for database of type 'EmpireImprovementDefinition'...
+<pre id="trace102"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:332</span><span class="flags">Default</span><a onclick="toggle_stack('trace103')">STACK</a>Loading plugin files for database of type 'TimeBubbleDefinition'...
+<pre id="trace103"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:342</span><span class="flags">Default</span><a onclick="toggle_stack('trace104')">STACK</a>Loading plugin files for database of type 'CostReduction'...
+<pre id="trace104"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:462</span><span class="flags">Default</span><a onclick="toggle_stack('trace105')">STACK</a>Loading plugin files for database of type 'ResourceConverterDefinition'...
+<pre id="trace105"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:470</span><span class="flags">Default</span><a onclick="toggle_stack('trace106')">STACK</a>Loading plugin files for database of type 'ConstructionRefundDefinition'...
+<pre id="trace106"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:479</span><span class="flags">Default</span><a onclick="toggle_stack('trace107')">STACK</a>Loading plugin files for database of type 'BailiffDefinition'...
+<pre id="trace107"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:486</span><span class="flags">Default</span><a onclick="toggle_stack('trace108')">STACK</a>Loading plugin files for database of type 'TemporaryEffectDefinition'...
+<pre id="trace108"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:490</span><span class="flags">Default</span><a onclick="toggle_stack('trace109')">STACK</a>Loading plugin files for database of type 'Amplitude.Unity.Gui.GuiWindowsStackDefinition'...
+<pre id="trace109"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:40:504</span><span class="flags">Default</span><a onclick="toggle_stack('trace110')">STACK</a>Loading plugin files for database of type 'Amplitude.Unity.Gui.GuiTooltipDescription'...
+<pre id="trace110"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:224</span><span class="flags">Default</span><a onclick="toggle_stack('trace111')">STACK</a>Loading plugin files for database of type 'Amplitude.Unity.Gui.GuiElement'...
+<pre id="trace111"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Warning Data"><span class="time">19:24:41:225</span><span class="flags">Data</span><a onclick="toggle_stack('trace112')">STACK</a>The
+ database of type 'Amplitude.Unity.Gui.GuiElement' has overriden an 
+element because its key name 'HullMedium03Unfallen' was already 
+registered for the same revision number #3.
+<pre id="trace112"> at AddElement in :line 0
+ at LoadFromFile in :line 0
+ at LoadFile in :line 0
+ at Amplitude.Unity.Framework.IDatabaseControl.LoadFile in :line 0
+ at LoadDatabase in :line 0
+ at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:229</span><span class="flags">Default</span><a onclick="toggle_stack('trace113')">STACK</a>Loading plugin files for database of type 'LoadingTipGuiElement'...
+<pre id="trace113"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:527</span><span class="flags">Default</span><a onclick="toggle_stack('trace114')">STACK</a>Loading plugin files for database of type 'AllianceGuiElement'...
+<pre id="trace114"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:530</span><span class="flags">Default</span><a onclick="toggle_stack('trace115')">STACK</a>Loading plugin files for database of type 'GuiSorter'...
+<pre id="trace115"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:535</span><span class="flags">Default</span><a onclick="toggle_stack('trace116')">STACK</a>Loading plugin files for database of type 'GuiResourcePropertySet'...
+<pre id="trace116"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:546</span><span class="flags">Default</span><a onclick="toggle_stack('trace117')">STACK</a>Loading plugin files for database of type 'GuiPlanetTypeBaseStats'...
+<pre id="trace117"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:550</span><span class="flags">Default</span><a onclick="toggle_stack('trace118')">STACK</a>Loading plugin files for database of type 'GuiPlanetStatsModifier'...
+<pre id="trace118"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:556</span><span class="flags">Default</span><a onclick="toggle_stack('trace119')">STACK</a>Loading plugin files for database of type 'EncounterPlayTrajectoryDefinitionCollection'...
+<pre id="trace119"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:564</span><span class="flags">Default</span><a onclick="toggle_stack('trace120')">STACK</a>Loading plugin files for database of type 'GuiHighlightDefinition'...
+<pre id="trace120"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:581</span><span class="flags">Default</span><a onclick="toggle_stack('trace121')">STACK</a>Loading plugin files for database of type 'PanelFeatureModuleEffectsDefinition'...
+<pre id="trace121"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:597</span><span class="flags">Default</span><a onclick="toggle_stack('trace122')">STACK</a>Loading plugin files for database of type 'PropertyFilteringRuleDefinition'...
+<pre id="trace122"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:614</span><span class="flags">Default</span><a onclick="toggle_stack('trace123')">STACK</a>Loading plugin files for database of type 'GuiCursor'...
+<pre id="trace123"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:633</span><span class="flags">Default</span><a onclick="toggle_stack('trace124')">STACK</a>Loading plugin files for database of type 'MouseCursorRule'...
+<pre id="trace124"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:633</span><span class="flags">Default</span><a onclick="toggle_stack('trace125')">STACK</a>CursorManager.LoadMouseRules
+<pre id="trace125"> at LoadMouseRules in :line 0
+ at Update in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:633</span><span class="flags">Default</span><a onclick="toggle_stack('trace126')">STACK</a>CursorManager.LoadMouseRules success with 22 rules
+<pre id="trace126"> at LoadMouseRules in :line 0
+ at Update in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:657</span><span class="flags">Default</span><a onclick="toggle_stack('trace127')">STACK</a>Loading plugin files for database of type 'Amplitude.Unity.View.Mapping.Xml.XmlMapping'...
+<pre id="trace127"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:664</span><span class="flags">Default</span><a onclick="toggle_stack('trace128')">STACK</a>Loading plugin files for database of type 'Palette'...
+<pre id="trace128"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:680</span><span class="flags">Default</span><a onclick="toggle_stack('trace129')">STACK</a>Loading plugin files for database of type 'PaletteChroma'...
+<pre id="trace129"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:730</span><span class="flags">Default</span><a onclick="toggle_stack('trace130')">STACK</a>Loading plugin files for database of type 'FactionTrait'...
+<pre id="trace130"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:763</span><span class="flags">Default</span><a onclick="toggle_stack('trace131')">STACK</a>Loading plugin files for database of type 'FactionAffinity'...
+<pre id="trace131"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:824</span><span class="flags">Default</span><a onclick="toggle_stack('trace132')">STACK</a>Loading plugin files for database of type 'FactionAffinityMapping'...
+<pre id="trace132"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:827</span><span class="flags">Default</span><a onclick="toggle_stack('trace133')">STACK</a>Loading plugin files for database of type 'FactionTraitCategoryDefinition'...
+<pre id="trace133"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:834</span><span class="flags">Default</span><a onclick="toggle_stack('trace134')">STACK</a>Loading plugin files for database of type 'MinorFactionPersonalityDefinition'...
+<pre id="trace134"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:839</span><span class="flags">Default</span><a onclick="toggle_stack('trace135')">STACK</a>Loading plugin files for database of type 'PersonalityDefinition'...
+<pre id="trace135"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:880</span><span class="flags">Default</span><a onclick="toggle_stack('trace136')">STACK</a>Loading plugin files for database of type 'Faction'...
+<pre id="trace136"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:896</span><span class="flags">Default</span><a onclick="toggle_stack('trace137')">STACK</a>Loading plugin files for database of type 'MajorFaction'...
+<pre id="trace137"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:916</span><span class="flags">Default</span><a onclick="toggle_stack('trace138')">STACK</a>Loading plugin files for database of type 'MinorFaction'...
+<pre id="trace138"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:931</span><span class="flags">Default</span><a onclick="toggle_stack('trace139')">STACK</a>Loading plugin files for database of type 'EncounterArenaDefinition'...
+<pre id="trace139"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:949</span><span class="flags">Default</span><a onclick="toggle_stack('trace140')">STACK</a>Loading plugin files for database of type 'EncounterFlotillaMatchDefinition'...
+<pre id="trace140"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:956</span><span class="flags">Default</span><a onclick="toggle_stack('trace141')">STACK</a>Loading plugin files for database of type 'EncounterEntityDefinition'...
+<pre id="trace141"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:992</span><span class="flags">Default</span><a onclick="toggle_stack('trace142')">STACK</a>Loading plugin files for database of type 'EncounterPlayDefinition'...
+<pre id="trace142"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:41:996</span><span class="flags">Default</span><a onclick="toggle_stack('trace143')">STACK</a>Loading plugin files for database of type 'EncounterSequenceDefinition'...
+<pre id="trace143"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:42:000</span><span class="flags">Default</span><a onclick="toggle_stack('trace144')">STACK</a>Loading plugin files for database of type 'EncounterArrivalSequenceDefinition'...
+<pre id="trace144"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:42:011</span><span class="flags">Default</span><a onclick="toggle_stack('trace145')">STACK</a>Loading plugin files for database of type 'EncounterFormationDefinition'...
+<pre id="trace145"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:42:016</span><span class="flags">Default</span><a onclick="toggle_stack('trace146')">STACK</a>Loading plugin files for database of type 'EncounterTargetingRangeDefinition'...
+<pre id="trace146"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:42:024</span><span class="flags">Default</span><a onclick="toggle_stack('trace147')">STACK</a>Loading plugin files for database of type 'EncounterEventToRealizationEventDictionaryDefinition'...
+<pre id="trace147"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:42:034</span><span class="flags">Default</span><a onclick="toggle_stack('trace148')">STACK</a>Loading plugin files for database of type 'SalvoDefinition'...
+<pre id="trace148"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:42:071</span><span class="flags">Default</span><a onclick="toggle_stack('trace149')">STACK</a>Loading plugin files for database of type 'BattleActionDefinition'...
+<pre id="trace149"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:42:082</span><span class="flags">Default</span><a onclick="toggle_stack('trace150')">STACK</a>Loading plugin files for database of type 'SquadronMissionDefinition'...
+<pre id="trace150"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:42:090</span><span class="flags">Default</span><a onclick="toggle_stack('trace151')">STACK</a>Loading plugin files for database of type 'SquadronStanceDefinition'...
+<pre id="trace151"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:42:098</span><span class="flags">Default</span><a onclick="toggle_stack('trace152')">STACK</a>Loading plugin files for database of type 'SquadronStanceSelectorDefinition'...
+<pre id="trace152"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:42:114</span><span class="flags">Default</span><a onclick="toggle_stack('trace153')">STACK</a>Loading plugin files for database of type 'SquadronFormationDefinition'...
+<pre id="trace153"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:42:132</span><span class="flags">Default</span><a onclick="toggle_stack('trace154')">STACK</a>Loading plugin files for database of type 'SquadronMetaFormationDefinition'...
+<pre id="trace154"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:42:148</span><span class="flags">Default</span><a onclick="toggle_stack('trace155')">STACK</a>Loading plugin files for database of type 'RealizationEventDefinition'...
+<pre id="trace155"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:42:207</span><span class="flags">Default</span><a onclick="toggle_stack('trace156')">STACK</a>Loading plugin files for database of type 'BattleEffectDefinition'...
+<pre id="trace156"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:061</span><span class="flags">Default</span><a onclick="toggle_stack('trace157')">STACK</a>Loading plugin files for database of type 'CameraShotDefinition'...
+<pre id="trace157"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:068</span><span class="flags">Default</span><a onclick="toggle_stack('trace158')">STACK</a>Loading plugin files for database of type 'PoliticsDefinition'...
+<pre id="trace158"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:078</span><span class="flags">Default</span><a onclick="toggle_stack('trace159')">STACK</a>Loading plugin files for database of type 'GovernmentDefinition'...
+<pre id="trace159"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:130</span><span class="flags">Default</span><a onclick="toggle_stack('trace160')">STACK</a>Loading plugin files for database of type 'LawDefinition'...
+<pre id="trace160"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:135</span><span class="flags">Default</span><a onclick="toggle_stack('trace161')">STACK</a>Loading plugin files for database of type 'ElectionProcessTaskDefinition'...
+<pre id="trace161"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:139</span><span class="flags">Default</span><a onclick="toggle_stack('trace162')">STACK</a>Loading plugin files for database of type 'ElectionProcessDefinition'...
+<pre id="trace162"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:148</span><span class="flags">Default</span><a onclick="toggle_stack('trace163')">STACK</a>Loading plugin files for database of type 'SenatorInteractionDefinition'...
+<pre id="trace163"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:159</span><span class="flags">Default</span><a onclick="toggle_stack('trace164')">STACK</a>Loading plugin files for database of type 'ElectionActionDefinition'...
+<pre id="trace164"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:164</span><span class="flags">Default</span><a onclick="toggle_stack('trace165')">STACK</a>Loading plugin files for database of type 'PoliticsSupportStatusDefinition'...
+<pre id="trace165"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:182</span><span class="flags">Default</span><a onclick="toggle_stack('trace166')">STACK</a>Loading plugin files for database of type 'PoliticsExperienceStatusDefinition'...
+<pre id="trace166"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:199</span><span class="flags">Default</span><a onclick="toggle_stack('trace167')">STACK</a>Loading plugin files for database of type 'HeroAffinityDefinition'...
+<pre id="trace167"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:216</span><span class="flags">Default</span><a onclick="toggle_stack('trace168')">STACK</a>Loading plugin files for database of type 'HeroClassDefinition'...
+<pre id="trace168"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:232</span><span class="flags">Default</span><a onclick="toggle_stack('trace169')">STACK</a>Loading plugin files for database of type 'HeroPoliticsDefinition'...
+<pre id="trace169"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:249</span><span class="flags">Default</span><a onclick="toggle_stack('trace170')">STACK</a>Loading plugin files for database of type 'HeroSkillTreeDefinition'...
+<pre id="trace170"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:291</span><span class="flags">Default</span><a onclick="toggle_stack('trace171')">STACK</a>Loading plugin files for database of type 'HeroSkillDefinition'...
+<pre id="trace171"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:294</span><span class="flags">Default</span><a onclick="toggle_stack('trace172')">STACK</a>Loading plugin files for database of type 'HeroMasteryDefinition'...
+<pre id="trace172"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:299</span><span class="flags">Default</span><a onclick="toggle_stack('trace173')">STACK</a>Loading plugin files for database of type 'HeroUnlockGaugeDefinition'...
+<pre id="trace173"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:315</span><span class="flags">Default</span><a onclick="toggle_stack('trace174')">STACK</a>Loading plugin files for database of type 'ScoreProviderListDefinition'...
+<pre id="trace174"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:43:332</span><span class="flags">Default</span><a onclick="toggle_stack('trace175')">STACK</a>Loading plugin files for database of type 'HeroDefinition'...
+<pre id="trace175"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:45:822</span><span class="flags">Default</span><a onclick="toggle_stack('trace176')">STACK</a>Loading plugin files for database of type 'QuestDefinition'...
+<pre id="trace176"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:45:834</span><span class="flags">Default</span><a onclick="toggle_stack('trace177')">STACK</a>Loading plugin files for database of type 'QuestEffectDefinition'...
+<pre id="trace177"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:45:842</span><span class="flags">Default</span><a onclick="toggle_stack('trace178')">STACK</a>Loading plugin files for database of type 'QuestTriggeringProbabilityDefinition'...
+<pre id="trace178"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:45:845</span><span class="flags">Default</span><a onclick="toggle_stack('trace179')">STACK</a>Loading plugin files for database of type 'QuestTriggeringMutualExclusionDefinition'...
+<pre id="trace179"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:45:883</span><span class="flags">Default</span><a onclick="toggle_stack('trace180')">STACK</a>Loading plugin files for database of type 'Droplist'...
+<pre id="trace180"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:45:887</span><span class="flags">Default</span><a onclick="toggle_stack('trace181')">STACK</a>Loading plugin files for database of type 'NodeEffectDefinition'...
+<pre id="trace181"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:47:867</span><span class="flags">Default</span><a onclick="toggle_stack('trace182')">STACK</a>Loading plugin files for database of type 'TutorialDefinition'...
+<pre id="trace182"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:47:895</span><span class="flags">Default</span><a onclick="toggle_stack('trace183')">STACK</a>Loading plugin files for database of type 'VictoryConditionDefinition'...
+<pre id="trace183"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:47:904</span><span class="flags">Default</span><a onclick="toggle_stack('trace184')">STACK</a>Loading plugin files for database of type 'GameStatisticDefinition'...
+<pre id="trace184"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:47:908</span><span class="flags">Default</span><a onclick="toggle_stack('trace185')">STACK</a>Loading plugin files for database of type 'Amplitude.Unity.Achievement.AchievementDefinition'...
+<pre id="trace185"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:47:911</span><span class="flags">Default</span><a onclick="toggle_stack('trace186')">STACK</a>Loading plugin files for database of type 'Amplitude.Unity.Achievement.AchievementStatisticDefinition'...
+<pre id="trace186"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:47:920</span><span class="flags">Default</span><a onclick="toggle_stack('trace187')">STACK</a>Loading plugin files for database of type 'FleetNameMappingDefinition'...
+<pre id="trace187"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:47:957</span><span class="flags">Default</span><a onclick="toggle_stack('trace188')">STACK</a>Loading plugin files for database of type 'CuriosityDefinition'...
+<pre id="trace188"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:47:978</span><span class="flags">Default</span><a onclick="toggle_stack('trace189')">STACK</a>Loading plugin files for database of type 'CuriosityDroplist'...
+<pre id="trace189"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:47:986</span><span class="flags">Default</span><a onclick="toggle_stack('trace190')">STACK</a>Loading plugin files for database of type 'Amplitude.Unity.Game.Orders.OrderPolicySetup'...
+<pre id="trace190"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:47:999</span><span class="flags">Default</span><a onclick="toggle_stack('trace191')">STACK</a>Loading plugin files for database of type 'GameSettingDefinition'...
+<pre id="trace191"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:005</span><span class="flags">Default</span><a onclick="toggle_stack('trace192')">STACK</a>Loading plugin files for database of type 'GameSettingRestrictionDefinition'...
+<pre id="trace192"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:008</span><span class="flags">Default</span><a onclick="toggle_stack('trace193')">STACK</a>Loading plugin files for database of type 'TradingCompanyDefinition'...
+<pre id="trace193"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:038</span><span class="flags">Default</span><a onclick="toggle_stack('trace194')">STACK</a>Loading plugin files for database of type 'TradableCategoryDefinition'...
+<pre id="trace194"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:041</span><span class="flags">Default</span><a onclick="toggle_stack('trace195')">STACK</a>Loading plugin files for database of type 'TradableSubCategoryDefinition'...
+<pre id="trace195"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:060</span><span class="flags">Default</span><a onclick="toggle_stack('trace196')">STACK</a>Loading plugin files for database of type 'TradableDefinition'...
+<pre id="trace196"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:073</span><span class="flags">Default</span><a onclick="toggle_stack('trace197')">STACK</a>Loading plugin files for database of type 'MarketplaceAdvertisementDefinition'...
+<pre id="trace197"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:090</span><span class="flags">Default</span><a onclick="toggle_stack('trace198')">STACK</a>Loading plugin files for database of type 'TradingCompanyImprovementDefinition'...
+<pre id="trace198"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:302</span><span class="flags">Default</span><a onclick="toggle_stack('trace199')">STACK</a>Loading plugin files for database of type 'MarketplaceEventDefinition'...
+<pre id="trace199"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:321</span><span class="flags">Default</span><a onclick="toggle_stack('trace200')">STACK</a>Loading plugin files for database of type 'MinorStateDefinition'...
+<pre id="trace200"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:325</span><span class="flags">Default</span><a onclick="toggle_stack('trace201')">STACK</a>Loading plugin files for database of type 'ImprovementListDefinition'...
+<pre id="trace201"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:329</span><span class="flags">Default</span><a onclick="toggle_stack('trace202')">STACK</a>Loading plugin files for database of type 'PlanetImprovementMappingDefinition'...
+<pre id="trace202"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:332</span><span class="flags">Default</span><a onclick="toggle_stack('trace203')">STACK</a>Loading plugin files for database of type 'FleetMissionDefinition'...
+<pre id="trace203"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:474</span><span class="flags">Default</span><a onclick="toggle_stack('trace204')">STACK</a>Loading plugin files for database of type 'SystemDiscoverySequenceDefinition'...
+<pre id="trace204"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:481</span><span class="flags">Default</span><a onclick="toggle_stack('trace205')">STACK</a>Loading plugin files for database of type 'Amplitude.Unity.Framework.AnimationCurve'...
+<pre id="trace205"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:487</span><span class="flags">Default</span><a onclick="toggle_stack('trace206')">STACK</a>Loading plugin files for database of type 'GroundBattleViewerConfig'...
+<pre id="trace206"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:496</span><span class="flags">Default</span><a onclick="toggle_stack('trace207')">STACK</a>Loading plugin files for database of type 'GroundBattleUnitConfig'...
+<pre id="trace207"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:504</span><span class="flags">Default</span><a onclick="toggle_stack('trace208')">STACK</a>Loading plugin files for database of type 'GroundBattleStrategyDefinition'...
+<pre id="trace208"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:526</span><span class="flags">Default</span><a onclick="toggle_stack('trace209')">STACK</a>Loading plugin files for database of type 'GroundBattleOutcomeDefinition'...
+<pre id="trace209"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:538</span><span class="flags">Default</span><a onclick="toggle_stack('trace210')">STACK</a>Loading plugin files for database of type 'ManpowerUpgradeDefinition'...
+<pre id="trace210"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:547</span><span class="flags">Default</span><a onclick="toggle_stack('trace211')">STACK</a>Loading plugin files for database of type 'SystemSupervisorDefinition'...
+<pre id="trace211"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:556</span><span class="flags">Default</span><a onclick="toggle_stack('trace212')">STACK</a>Loading plugin files for database of type 'MinigameDefinition'...
+<pre id="trace212"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:574</span><span class="flags">Default</span><a onclick="toggle_stack('trace213')">STACK</a>Loading plugin files for database of type 'ConstellationOwnershipBonusDefinition'...
+<pre id="trace213"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:602</span><span class="flags">Default</span><a onclick="toggle_stack('trace214')">STACK</a>Loading plugin files for database of type 'ContextualDiplomaticTermDefinition'...
+<pre id="trace214"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:622</span><span class="flags">Default</span><a onclick="toggle_stack('trace215')">STACK</a>Loading plugin files for database of type 'PiratePowerLevelDefinition'...
+<pre id="trace215"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:625</span><span class="flags">Default</span><a onclick="toggle_stack('trace216')">STACK</a>Loading plugin files for database of type 'PirateRelationThresholdDefinition'...
+<pre id="trace216"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:640</span><span class="flags">Default</span><a onclick="toggle_stack('trace217')">STACK</a>Loading plugin files for database of type 'StarDestructionDefinition'...
+<pre id="trace217"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:657</span><span class="flags">Default</span><a onclick="toggle_stack('trace218')">STACK</a>Loading plugin files for database of type 'EffectZoneDefinition'...
+<pre id="trace218"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:674</span><span class="flags">Default</span><a onclick="toggle_stack('trace219')">STACK</a>Loading plugin files for database of type 'ZoneEffectDefinition'...
+<pre id="trace219"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:690</span><span class="flags">Default</span><a onclick="toggle_stack('trace220')">STACK</a>Loading plugin files for database of type 'CitadelDefinition'...
+<pre id="trace220"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:707</span><span class="flags">Default</span><a onclick="toggle_stack('trace221')">STACK</a>Loading plugin files for database of type 'BasicModuleDefinition'...
+<pre id="trace221"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:724</span><span class="flags">Default</span><a onclick="toggle_stack('trace222')">STACK</a>Loading plugin files for database of type 'RemainsDefinition'...
+<pre id="trace222"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:48:740</span><span class="flags">Default</span><a onclick="toggle_stack('trace223')">STACK</a>Loading plugin files for database of type 'GroundBattleFormationDefinition'...
+<pre id="trace223"> at LoadPlugin in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:53:981</span><span class="flags">Default</span><a onclick="toggle_stack('trace224')">STACK</a>Spent 11.7754644 second(s) loading the module plugins.
+<pre id="trace224"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:53:981</span><span class="flags">Default</span><a onclick="toggle_stack('trace225')">STACK</a>Runtime hash key = 'E1E358B3AF81C254C5A81349FAE8592A'.
+<pre id="trace225"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:53:981</span><span class="flags">Default</span><a onclick="toggle_stack('trace226')">STACK</a>Waiting for Steam statistics and achievements reception callback...
+<pre id="trace226"> at LoadStatistics in :line 0
+ at Load in :line 0
+ at Load in :line 0
+ at Load in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:53:981</span><span class="flags">Default</span><a onclick="toggle_stack('trace227')">STACK</a>Waiting for Steam statistics and achievements reception callback...
+<pre id="trace227"> at LoadAchievements in :line 0
+ at Load in :line 0
+ at Load in :line 0
+ at Load in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Warning GUI"><span class="time">19:24:53:981</span><span class="flags">GUI</span><a onclick="toggle_stack('trace228')">STACK</a>We
+ already have the 2 extremities of link 
+'TechnologyLinkDefinitionEmpireDevelopment1To5', so the extra source 
+TechnologyDefinitionEmpireDevelopment5 will be ignored
+<pre id="trace228"> at GetExtremitiesOfLink in :line 0
+ at BuildTechnologyRelatedGuiWrappers in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Warning GUI"><span class="time">19:24:53:981</span><span class="flags">GUI</span><a onclick="toggle_stack('trace229')">STACK</a>We
+ already have the 2 extremities of link 
+'TechnologyLinkDefinitionEmpireDevelopment1To5Unfallen', so the extra 
+source TechnologyDefinitionEmpireDevelopment5Unfallen will be ignored
+<pre id="trace229"> at GetExtremitiesOfLink in :line 0
+ at BuildTechnologyRelatedGuiWrappers in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Warning GUI"><span class="time">19:24:53:981</span><span class="flags">GUI</span><a onclick="toggle_stack('trace230')">STACK</a>We
+ already have the 2 extremities of link 
+'TechnologyLinkDefinitionEmpireDevelopment1To5TimeLords', so the extra 
+source TechnologyDefinitionEmpireDevelopment5TimeLords will be ignored
+<pre id="trace230"> at GetExtremitiesOfLink in :line 0
+ at BuildTechnologyRelatedGuiWrappers in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log GUI"><span class="time">19:24:53:981</span><span class="flags">GUI</span><a onclick="toggle_stack('trace231')">STACK</a>The
+ windows '/[Application]/[Gui]/OverlayRenderer/LoadSaveModalWindow' and 
+'/[Application]/[Gui]/OverlayRenderer/LoadSaveModalWindow' have the same
+ type and should be used by name only.
+<pre id="trace231"> at InstantiateWindows in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:981</span><span class="flags">AGE</span><a onclick="toggle_stack('trace232')">STACK</a>Caching
+ reflection information for target class 'AgePrimitiveImage, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: IsScalable).
+<pre id="trace232"> at IsScalable in :line 0
+ at Init in :line 0
+ at InitItem in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:981</span><span class="flags">AGE</span><a onclick="toggle_stack('trace233')">STACK</a>Caching
+ reflection information for target class 'AgePrimitiveImage, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: SetPropertyValue).
+<pre id="trace233"> at SetPropertyValue in :line 0
+ at SetTargetValue in :line 0
+ at Init in :line 0
+ at InitItem in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace234')">STACK</a>Caching
+ reflection information for target class 'AgePrimitiveLabel, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: IsScalable).
+<pre id="trace234"> at IsScalable in :line 0
+ at Init in :line 0
+ at InitItem in :line 0
+ at ApplyTemplate in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace235')">STACK</a>Caching
+ reflection information for target class 'AgePrimitiveLabel, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: SetPropertyValue).
+<pre id="trace235"> at SetPropertyValue in :line 0
+ at SetTargetValue in :line 0
+ at Init in :line 0
+ at InitItem in :line 0
+ at ApplyTemplate in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace236')">STACK</a>Caching
+ reflection information for target class 'AgeTransform, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: IsScalable).
+<pre id="trace236"> at IsScalable in :line 0
+ at Init in :line 0
+ at InitItem in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace237')">STACK</a>Caching
+ reflection information for target class 'AgePrimitiveSector, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: IsScalable).
+<pre id="trace237"> at IsScalable in :line 0
+ at Init in :line 0
+ at InitItem in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace238')">STACK</a>Caching
+ reflection information for target class 'AgePrimitiveSector, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: SetPropertyValue).
+<pre id="trace238"> at SetPropertyValue in :line 0
+ at SetTargetValue in :line 0
+ at Init in :line 0
+ at InitItem in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace239')">STACK</a>Caching
+ reflection information for target class 'AgeTransform, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: SetPropertyValue).
+<pre id="trace239"> at SetPropertyValue in :line 0
+ at SetTargetValue in :line 0
+ at Init in :line 0
+ at InitItem in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace240')">STACK</a>Caching
+ reflection information for target class 'AgePrimitiveArc, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: IsScalable).
+<pre id="trace240"> at IsScalable in :line 0
+ at Init in :line 0
+ at InitItem in :line 0
+ at ApplyTemplate in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace241')">STACK</a>Caching
+ reflection information for target class 'AgePrimitiveArc, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: SetPropertyValue).
+<pre id="trace241"> at SetPropertyValue in :line 0
+ at SetTargetValue in :line 0
+ at Init in :line 0
+ at InitItem in :line 0
+ at ApplyTemplate in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace242')">STACK</a>Caching
+ reflection information for target class 'AgePrimitiveLineIndented, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: IsScalable).
+<pre id="trace242"> at IsScalable in :line 0
+ at Init in :line 0
+ at InitItem in :line 0
+ at ApplyTemplate in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace243')">STACK</a>Caching
+ reflection information for target class 'AgePrimitiveLineIndented, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: SetPropertyValue).
+<pre id="trace243"> at SetPropertyValue in :line 0
+ at SetTargetValue in :line 0
+ at Init in :line 0
+ at InitItem in :line 0
+ at ApplyTemplate in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace244')">STACK</a>Caching
+ reflection information for target class 'GuiValueController, 
+Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' 
+(issued from: IsScalable).
+<pre id="trace244"> at IsScalable in :line 0
+ at Init in :line 0
+ at InitItem in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace245')">STACK</a>Caching
+ reflection information for target class 'GuiBlurBackground, 
+Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' 
+(issued from: IsScalable).
+<pre id="trace245"> at IsScalable in :line 0
+ at Init in :line 0
+ at InitItem in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace246')">STACK</a>Rebuilding the texture atlas...
+<pre id="trace246"> at Build in :line 0
+ at Init in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log GUI"><span class="time">19:24:53:982</span><span class="flags">GUI</span><a onclick="toggle_stack('trace247')">STACK</a>Loaded 153 modifier templates
+<pre id="trace247"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at RuntimeService_RuntimeChange in :line 0
+ at OnRuntimeChange in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace248')">STACK</a>Caching
+ reflection information for target class 'AgePrimitiveSector, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: GetPropertyInfo).
+<pre id="trace248"> at GetPropertyValue in :line 0
+ at GetTargetValue in :line 0
+ at OnUpdateInteraction in :line 0
+ at OnUpdateInteraction in :line 0
+ at NotifyChange in :line 0
+ at OnResetInteraction in :line 0
+ at Init in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace249')">STACK</a>Caching
+ reflection information for target class 'AgePrimitiveLabel, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: GetPropertyInfo).
+<pre id="trace249"> at GetPropertyValue in :line 0
+ at GetTargetValue in :line 0
+ at OnUpdateInteraction in :line 0
+ at OnUpdateInteraction in :line 0
+ at NotifyChange in :line 0
+ at OnResetInteraction in :line 0
+ at Init in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace250')">STACK</a>Caching
+ reflection information for target class 'AgeTransform, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: GetPropertyInfo).
+<pre id="trace250"> at GetPropertyValue in :line 0
+ at GetTargetValue in :line 0
+ at OnUpdateInteraction in :line 0
+ at OnUpdateInteraction in :line 0
+ at OnUpdateInteraction in :line 0
+ at NotifyChange in :line 0
+ at OnResetInteraction in :line 0
+ at Init in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace251')">STACK</a>Caching
+ reflection information for target class 'AgePrimitiveImage, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: GetPropertyInfo).
+<pre id="trace251"> at GetPropertyValue in :line 0
+ at GetTargetValue in :line 0
+ at OnUpdateInteraction in :line 0
+ at OnUpdateInteraction in :line 0
+ at NotifyChange in :line 0
+ at OnResetInteraction in :line 0
+ at Init in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:24:53:982</span><span class="flags">AGE</span><a onclick="toggle_stack('trace252')">STACK</a>Caching
+ reflection information for target class 'AgePrimitiveArc, 
+Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, 
+PublicKeyToken=null' (issued from: GetPropertyInfo).
+<pre id="trace252"> at GetPropertyValue in :line 0
+ at GetTargetValue in :line 0
+ at OnUpdateInteraction in :line 0
+ at OnUpdateInteraction in :line 0
+ at NotifyChange in :line 0
+ at OnResetInteraction in :line 0
+ at Init in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:53:982</span><span class="flags">Default</span><a onclick="toggle_stack('trace253')">STACK</a>SteamClientCallbacks_UserStatsReceivedCallback
+<pre id="trace253"> at SteamClientCallbacks_UserStatsReceivedCallback in :line 0
+ at SteamAPI_RunCallbacks in :line 0
+ at RunCallbacks in :line 0
+ at FixedUpdate in :line 0
+</pre>
+</div>
+
+<div class="Log Runtime"><span class="time">19:24:53:982</span><span class="flags">Runtime</span><a onclick="toggle_stack('trace254')">STACK</a>RuntimeState_Bootstrapper.End()
+<pre id="trace254"> at End in :line 0
+ at RefreshState in :line 0
+ at Update in :line 0
+ at Update in :line 0
+</pre>
+</div>
+
+<div class="Log Runtime"><span class="time">19:24:53:982</span><span class="flags">Runtime</span><a onclick="toggle_stack('trace255')">STACK</a>RuntimeState_OutGame.Begin()
+<pre id="trace255"> at Begin in :line 0
+ at Begin in :line 0
+ at RefreshState in :line 0
+ at Update in :line 0
+ at Update in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:53:988</span><span class="flags">Default</span><a onclick="toggle_stack('trace256')">STACK</a>Loading the outgame view...
+<pre id="trace256"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:53:988</span><span class="flags">Default</span><a onclick="toggle_stack('trace257')">STACK</a>Force Clear of AlwaysActiveCamera
+<pre id="trace257"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:335</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace258')">STACK</a>Binding
+ service [CameraPreRenderHookHandler] with context [BattleBackground] 
+with an instance of type [CameraPreRenderHookHandler]
+<pre id="trace258"> at AddService in :line 0
+ at Load in :line 0
+ at Awake in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:335</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace259')">STACK</a>Binding service [CameraPreRenderHookHandler] with context [Battle] with an instance of type [CameraPreRenderHookHandler]
+<pre id="trace259"> at AddService in :line 0
+ at Load in :line 0
+ at Awake in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace260')">STACK</a>Initializing GalaxyViewTechniqueLoaderComponent technique...
+<pre id="trace260"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace261')">STACK</a>In Technique Battle, Waiting for the ignition of all galaxy view technique ancillaries...
+<pre id="trace261"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace262')">STACK</a>In Technique Battle, all galaxy view technique ancillaries have been ignited
+<pre id="trace262"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace263')">STACK</a>Loading the GalaxyViewTechniqueLoaderComponent technique...
+<pre id="trace263"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace264')">STACK</a>In Technique Battle, Load 
+<pre id="trace264"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace265')">STACK</a>In Technique Battle, load rendering technique ancillaries PlanetoidRendererManager
+<pre id="trace265"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:335</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace266')">STACK</a>Binding service [IPlanetoidRendererService] with context [BattleBackground] with an instance of type [PlanetoidRendererManager]
+<pre id="trace266"> at AddService in :line 0
+ at LoadNoCoroutine in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace267')">STACK</a>In Technique Battle, the ancillary service 'PlanetoidRendererManager' has been loaded in 0.0019991 second(s).
+<pre id="trace267"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace268')">STACK</a>In Technique Battle, load rendering technique ancillaries TextRendererManager
+<pre id="trace268"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:335</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace269')">STACK</a>Binding service [ITextRendererService] with context [Battle] with an instance of type [TextRendererManager]
+<pre id="trace269"> at AddService in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace270')">STACK</a>In Technique Battle, the ancillary service 'TextRendererManager' has been loaded in 0 second(s).
+<pre id="trace270"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace271')">STACK</a>In Technique Battle, load rendering technique ancillaries ScanViewBattleRenderer
+<pre id="trace271"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:335</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace272')">STACK</a>Binding service [ScanViewBattleRenderer] with context [Battle] with an instance of type [ScanViewBattleRenderer]
+<pre id="trace272"> at AddService in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace273')">STACK</a>In Technique Battle, the ancillary service 'ScanViewBattleRenderer' has been loaded in 0.0050011 second(s).
+<pre id="trace273"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace274')">STACK</a>In Technique Battle, load rendering technique ancillaries ProceduralGeometryRendererManager
+<pre id="trace274"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:335</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace275')">STACK</a>Binding
+ service [ProceduralGeometryRendererManager] with context [Battle] with 
+an instance of type [ProceduralGeometryRendererManager]
+<pre id="trace275"> at AddService in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace276')">STACK</a>In Technique Battle, the ancillary service 'ProceduralGeometryRendererManager' has been loaded in 0 second(s).
+<pre id="trace276"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace277')">STACK</a>Initializing GalaxyViewTechniqueLoaderComponent took 0 frames
+<pre id="trace277"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace278')">STACK</a>Initializing GalaxyViewTechniqueLoaderComponent technique...
+<pre id="trace278"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:335</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace279')">STACK</a>Binding service [IInstancingRendererService] with context [Battle] with an instance of type [InstancingRenderer]
+<pre id="trace279"> at AddService in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:335</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace280')">STACK</a>Binding service [ICircleRendererService] with context [Battle] with an instance of type [CircleRendererManager]
+<pre id="trace280"> at AddService in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace281')">STACK</a>In Technique Prod, Waiting for the ignition of all galaxy view technique ancillaries...
+<pre id="trace281"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:335</span><span class="flags">Default</span><a onclick="toggle_stack('trace282')">STACK</a>In Technique Prod, all galaxy view technique ancillaries have been ignited
+<pre id="trace282"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:336</span><span class="flags">Default</span><a onclick="toggle_stack('trace283')">STACK</a>Loading the GalaxyViewTechniqueLoaderComponent technique...
+<pre id="trace283"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:336</span><span class="flags">Default</span><a onclick="toggle_stack('trace284')">STACK</a>In Technique Prod, Load 
+<pre id="trace284"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:336</span><span class="flags">Default</span><a onclick="toggle_stack('trace285')">STACK</a>In Technique Prod, load rendering technique ancillaries InstancingRenderer
+<pre id="trace285"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:336</span><span class="flags">Default</span><a onclick="toggle_stack('trace286')">STACK</a>In Technique Prod, the ancillary service 'InstancingRenderer' has been loaded in 0.0069953 second(s).
+<pre id="trace286"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:336</span><span class="flags">Default</span><a onclick="toggle_stack('trace287')">STACK</a>In Technique Prod, load rendering technique ancillaries CircleRendererManager
+<pre id="trace287"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:336</span><span class="flags">Default</span><a onclick="toggle_stack('trace288')">STACK</a>In Technique Prod, the ancillary service 'CircleRendererManager' has been loaded in 0.0019972 second(s).
+<pre id="trace288"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:336</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace289')">STACK</a>Changing (push) global shader keyword from  to INGAME_RENDERER
+<pre id="trace289"> at PushGlobalShaderKeyword in :line 0
+ at PushInsideShaderKeyword in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:336</span><span class="flags">Default</span><a onclick="toggle_stack('trace290')">STACK</a>Initializing GalaxyViewTechniqueLoaderComponent took 0 frames
+<pre id="trace290"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+ at StartCoroutine_Auto_Internal in :line 0
+ at StartCoroutine in :line 0
+ at StartCoroutine in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:336</span><span class="flags">Default</span><a onclick="toggle_stack('trace291')">STACK</a>Resizing atlas [AgeAtlas:distanceFieldAtlas] from 128x128 to 256x128xARGBFloat
+<pre id="trace291"> at GetOrCreateGlyph in :line 0
+ at GetOrCreateInAtlas in :line 0
+ at GetCharInfo in :line 0
+ at GetCharInfo in :line 0
+ at DrawText in :line 0
+ at Update in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:336</span><span class="flags">Default</span><a onclick="toggle_stack('trace292')">STACK</a>Resizing atlas [AgeAtlas:distanceFieldAtlas] from 256x128 to 256x256xARGBFloat
+<pre id="trace292"> at GetOrCreateGlyph in :line 0
+ at GetOrCreateInAtlas in :line 0
+ at GetCharInfo in :line 0
+ at GetCharInfo in :line 0
+ at DrawText in :line 0
+ at Update in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:336</span><span class="flags">Default</span><a onclick="toggle_stack('trace293')">STACK</a>Resizing atlas [AgeAtlas:distanceFieldAtlas] from 256x256 to 512x256xARGBFloat
+<pre id="trace293"> at GetOrCreateGlyph in :line 0
+ at GetOrCreateInAtlas in :line 0
+ at GetCharInfo in :line 0
+ at GetCharInfo in :line 0
+ at DrawText in :line 0
+ at Update in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:336</span><span class="flags">Default</span><a onclick="toggle_stack('trace294')">STACK</a>Resizing atlas [AgeAtlas:distanceFieldAtlas] from 512x256 to 512x512xARGBFloat
+<pre id="trace294"> at GetOrCreateGlyph in :line 0
+ at GetOrCreateInAtlas in :line 0
+ at GetCharInfo in :line 0
+ at GetCharInfo in :line 0
+ at DrawText in :line 0
+ at Update in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:336</span><span class="flags">Default</span><a onclick="toggle_stack('trace295')">STACK</a>Resizing atlas [AgeAtlas:distanceFieldAtlas] from 512x512 to 1024x512xARGBFloat
+<pre id="trace295"> at GetOrCreateGlyph in :line 0
+ at GetOrCreateInAtlas in :line 0
+ at GetCharInfo in :line 0
+ at GetCharInfo in :line 0
+ at DrawText in :line 0
+ at Update in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:336</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace296')">STACK</a>[HxFxSystemComponentTextureAtlasManager] Found Fx in AtlasBuilderMapping.
+<pre id="trace296"> at InitializeAtlasInfo in :line 0
+ at Load in :line 0
+ at Load in :line 0
+ at LoadComponent in :line 0
+ at Load in :line 0
+ at LoadIFN in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:336</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace297')">STACK</a>[HxFxSystemComponentTextureAtlasManager] Found BackgroundFx in AtlasBuilderMapping.
+<pre id="trace297"> at InitializeAtlasInfo in :line 0
+ at Load in :line 0
+ at Load in :line 0
+ at LoadComponent in :line 0
+ at Load in :line 0
+ at LoadIFN in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:336</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace298')">STACK</a>[HxFxSystemComponentTextureAtlasManager] Found OpaqueFx in AtlasBuilderMapping.
+<pre id="trace298"> at InitializeAtlasInfo in :line 0
+ at Load in :line 0
+ at Load in :line 0
+ at LoadComponent in :line 0
+ at Load in :line 0
+ at LoadIFN in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:336</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace299')">STACK</a>[HxFxSystemComponentTextureAtlasManager] Found PostProcessFx in AtlasBuilderMapping.
+<pre id="trace299"> at InitializeAtlasInfo in :line 0
+ at Load in :line 0
+ at Load in :line 0
+ at LoadComponent in :line 0
+ at Load in :line 0
+ at LoadIFN in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:336</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace300')">STACK</a>[HxFxSystemComponentTextureAtlasManager] Found DecalFx in AtlasBuilderMapping.
+<pre id="trace300"> at InitializeAtlasInfo in :line 0
+ at Load in :line 0
+ at Load in :line 0
+ at LoadComponent in :line 0
+ at Load in :line 0
+ at LoadIFN in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:336</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace301')">STACK</a>[HxFxSystemComponentTextureAtlasManager]
+ assigning atlas [Assets/HxFx/Resources/Textures/Atlas_DecalFx.png] 
+(2048x1024) to global name [_DecalAtlas]. From Tag [DecalFx] 
+<pre id="trace301"> at LoadAtlas in :line 0
+ at LoadAtlasAndExport in :line 0
+ at InitializeAtlasInfo in :line 0
+ at Load in :line 0
+ at Load in :line 0
+ at LoadComponent in :line 0
+ at Load in :line 0
+ at LoadIFN in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:336</span><span class="flags">Default</span><a onclick="toggle_stack('trace302')">STACK</a>In HxFxManagerComponent Unable to find a component [GalaxyEncounter] in hierarchy.
+<pre id="trace302"> at Load in :line 0
+ at LoadComponent in :line 0
+ at Load in :line 0
+ at LoadIFN in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:336</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace303')">STACK</a>Binding service [ILodService] with context [Default] with an instance of type [LodServiceImplementation]
+<pre id="trace303"> at AddService in :line 0
+ at Load in :line 0
+ at .ctor in :line 0
+ at Load in :line 0
+ at LoadComponent in :line 0
+ at Load in :line 0
+ at LoadIFN in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:24:57:336</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace304')">STACK</a>Binding
+ service [Amplitude.Unity.Graphics.IHxFxSystem] with context [Battle] 
+with an instance of type [Amplitude.Unity.Graphics.HxFxSystemManager]
+<pre id="trace304"> at AddService in :line 0
+ at Load in :line 0
+ at LoadIFN in :line 0
+ at Start in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:24:57:758</span><span class="flags">Default</span><a onclick="toggle_stack('trace305')">STACK</a>Release Clear of AlwaysActiveCamera
+<pre id="trace305"> at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Warning Audio"><span class="time">19:24:57:920</span><span class="flags">Audio</span><a onclick="toggle_stack('trace306')">STACK</a>In [[SFX: Play_SS_HIS_MISC_SMALL_Civilian_WarpToMove] ] the AudioEmitters[0] is null
+<pre id="trace306"> at Execute in :line 0
+ at Execute in :line 0
+ at Update in :line 0
+</pre>
+</div>
+
+<div class="Log AGE"><span class="time">19:25:01:390</span><span class="flags">AGE</span><a onclick="toggle_stack('trace307')">STACK</a>Rebuilding the texture atlas...
+<pre id="trace307"> at Build in :line 0
+ at SwitchHighDefinition in :line 0
+ at MoveNext in :line 0
+ at Run in :line 0
+ at MoveNext in :line 0
+ at InvokeMoveNext in :line 0
+</pre>
+</div>
+
+<div class="Log Gameplay"><span class="time">19:25:01:390</span><span class="flags">Gameplay</span><a onclick="toggle_stack('trace308')">STACK</a>Save test was successful.
+<pre id="trace308"> at OnEndShow in :line 0
+ at SpecificUpdate in :line 0
+ at Update in :line 0
+ at Update in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:25:02:672</span><span class="flags">Default</span><a onclick="toggle_stack('trace309')">STACK</a>SteamClientCallbacks_GameOverlayActivated
+<pre id="trace309"> at SteamClientCallbacks_GameOverlayActivated in :line 0
+ at SteamAPI_RunCallbacks in :line 0
+ at RunCallbacks in :line 0
+ at FixedUpdate in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:25:04:937</span><span class="flags">Default</span><a onclick="toggle_stack('trace310')">STACK</a>SteamClientCallbacks_GameOverlayActivated
+<pre id="trace310"> at SteamClientCallbacks_GameOverlayActivated in :line 0
+ at SteamAPI_RunCallbacks in :line 0
+ at RunCallbacks in :line 0
+ at FixedUpdate in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:25:06:473</span><span class="flags">Default</span><a onclick="toggle_stack('trace311')">STACK</a>SteamClientCallbacks_GameOverlayActivated
+<pre id="trace311"> at SteamClientCallbacks_GameOverlayActivated in :line 0
+ at SteamAPI_RunCallbacks in :line 0
+ at RunCallbacks in :line 0
+ at FixedUpdate in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:25:08:123</span><span class="flags">Default</span><a onclick="toggle_stack('trace312')">STACK</a>SteamClientCallbacks_GameOverlayActivated
+<pre id="trace312"> at SteamClientCallbacks_GameOverlayActivated in :line 0
+ at SteamAPI_RunCallbacks in :line 0
+ at RunCallbacks in :line 0
+ at FixedUpdate in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:25:11:271</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace313')">STACK</a>Unbinding service [Amplitude.Unity.Graphics.IHxFxSystem] with context [Battle]
+<pre id="trace313"> at RemoveService in :line 0
+ at Unload in :line 0
+ at OnApplicationQuit in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:25:11:271</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace314')">STACK</a>[HxFxSystemComponentTextureAtlasManager]
+ unassigning atlas [Atlas_DecalFx] (2048x1024) from Tag [DecalFx] to 
+global name [_DecalAtlas].
+<pre id="trace314"> at Unload in :line 0
+ at Unload in :line 0
+ at Unload in :line 0
+ at OnApplicationQuit in :line 0
+</pre>
+</div>
+
+<div class="Log HxFx"><span class="time">19:25:11:271</span><span class="flags">HxFx</span><a onclick="toggle_stack('trace315')">STACK</a>Unbinding service [ILodService] with context [Default]
+<pre id="trace315"> at RemoveService in :line 0
+ at Unload in :line 0
+ at Unload in :line 0
+ at Unload in :line 0
+ at OnApplicationQuit in :line 0
+</pre>
+</div>
+
+<div class="Log Default"><span class="time">19:25:11:271</span><span class="flags">Default</span><a onclick="toggle_stack('trace316')">STACK</a>Flushing diagnostics before closing streams...
+<pre id="trace316"> at CloseDiagnosticsLogFile in :line 0
+ at OnApplicationQuit in :line 0
+ at OnApplicationQuit in :line 0
+</pre>
+</div>
+
+</body></html>

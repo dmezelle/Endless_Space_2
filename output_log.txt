@@ -1,0 +1,139 @@
+Initialize engine version: 5.5.1p4 (70301f5c2872)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 560 Ti (ID=0x1200)
+    Vendor:   NVIDIA
+    VRAM:     969 MB
+    Driver:   23.21.13.9135
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\I18N.dll (this message is harmless)
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\I18N.West.dll (this message is harmless)
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\AssemblyValidator.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\AssemblyValidator.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Amplitude.AI.Common.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Amplitude.AI.Common.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Amplitude.AI.Loader.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Amplitude.AI.Loader.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Amplitude.Endless.Fantasy.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Amplitude.Endless.Fantasy.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\clipper_library.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\clipper_library.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Newtonsoft.Json.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Corale.Colore.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Corale.Colore.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Amplitude.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Amplitude.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Mono.Cecil.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Mono.Cecil.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Mono.Cecil.Mdb.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Mono.Cecil.Mdb.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\I18N.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\I18N.dll into Unity Child Domain
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\I18N.West.dll (this message is harmless)
+Loading F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\I18N.West.dll into Unity Child Domain
+- Completed reload, in  0.157 seconds
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\System.dll (this message is harmless)
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\System.Xml.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+IndexOutOfRangeException: Array index is out of range.
+  at UnityEngine.Display.RecreateDisplayList (System.IntPtr[] nativeDisplay) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
+D3D11: Failed to create RenderTexture (0 x 0 fmt 19 aa 8), error 0x80070057
+ 
+(Filename:  Line: 359)
+
+<RI> Initialized touch support.
+UnloadTime: 1.132101 ms
+Default codepage number is 437.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Bootload CheckFreetypeLibrary
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\Mono.Security.dll (this message is harmless)
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\System.Configuration.dll (this message is harmless)
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\System.Xml.Linq.dll (this message is harmless)
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\System.Runtime.Serialization.dll (this message is harmless)
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.020092 ms
+Either the '-nologo' or '-novideo' command line argument was found, skipping logo videos...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 7587.
+Total: 0.925500 ms (FindLiveObjects: 0.304796 ms CreateObjectMapping: 0.229723 ms MarkObjects: 0.378368 ms  DeleteObjects: 0.012311 ms)
+
+GraphicsDiagnosticsComponent is disabled because command line argument --diagnostic is not found
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Platform assembly: F:\Steam\steamapps\common\Endless Space 2\EndlessSpace2_Data\Managed\System.Data.dll (this message is harmless)
+Fallback handler could not load library F:/Steam/steamapps/common/Endless Space 2/EndlessSpace2_Data/Mono/libc
+Fallback handler could not load library F:/Steam/steamapps/common/Endless Space 2/EndlessSpace2_Data/Mono/.\libc
+Fallback handler could not load library F:/Steam/steamapps/common/Endless Space 2/EndlessSpace2_Data/Mono/libc
+System.TypeInitializationException: An exception was thrown by the type initializer for Mono.CSharp.CSharpCodeCompiler ---> System.IO.FileNotFoundException: Windows mono path not found: F:\Steam\steamapps\mono\mono\mini\mono.exe
+  at Mono.CSharp.CSharpCodeCompiler..cctor () [0x00000] in <filename unknown>:0 
+  --- End of inner exception stack trace ---
+  at Microsoft.CSharp.CSharpCodeProvider.CreateCompiler () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer.GenerateSerializers (System.Xml.Serialization.GenerationBatch batch, System.CodeDom.Compiler.CompilerParameters cp) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer.RunSerializerGeneration (System.Object obj) [0x00000] in <filename unknown>:0 
+System.TypeInitializationException: An exception was thrown by the type initializer for Mono.CSharp.CSharpCodeCompiler ---> System.IO.FileNotFoundException: Windows mono path not found: F:\Steam\steamapps\mono\mono\mini\mono.exe
+  at Mono.CSharp.CSharpCodeCompiler..cctor () [0x00000] in <filename unknown>:0 
+  --- End of inner exception stack trace ---
+  at Microsoft.CSharp.CSharpCodeProvider.CreateCompiler () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer.GenerateSerializers (System.Xml.Serialization.GenerationBatch batch, System.CodeDom.Compiler.CompilerParameters cp) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer.RunSerializerGeneration (System.Object obj) [0x00000] in <filename unknown>:0 
+System.TypeInitializationException: An exception was thrown by the type initializer for Mono.CSharp.CSharpCodeCompiler ---> System.IO.FileNotFoundException: Windows mono path not found: F:\Steam\steamapps\mono\mono\mini\mono.exe
+  at Mono.CSharp.CSharpCodeCompiler..cctor () [0x00000] in <filename unknown>:0 
+  --- End of inner exception stack trace ---
+  at Microsoft.CSharp.CSharpCodeProvider.CreateCompiler () [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer.GenerateSerializers (System.Xml.Serialization.GenerationBatch batch, System.CodeDom.Compiler.CompilerParameters cp) [0x00000] in <filename unknown>:0 
+  at System.Xml.Serialization.XmlSerializer.RunSerializerGeneration (System.Object obj) [0x00000] in <filename unknown>:0 
+Unloading 8 Unused Serialized files (Serialized files now loaded: 2)
+
+Unloading 40874 unused Assets to reduce memory usage. Loaded Objects now: 103229.
+Total: 227.710068 ms (FindLiveObjects: 9.005462 ms CreateObjectMapping: 11.902982 ms MarkObjects: 193.007690 ms  DeleteObjects: 13.793321 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: b38 -> priority: 1 
+  Thread -> id: 3974 -> priority: 1 
+Profiler is not supported in this build
+ 
+(Filename:  Line: 47)
+
+Profiler is not supported in this build
+ 
+(Filename:  Line: 75)
+
+Profiler is not supported in this build
+ 
+(Filename:  Line: 103)
+
+Disposing(False)...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
